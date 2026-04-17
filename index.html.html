@@ -1,0 +1,242 @@
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+.dash{background:#0b0f1a;color:#e2e8f0;font-family:var(--font-sans,sans-serif);padding:20px;border-radius:12px}
+.hdr{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px;flex-wrap:wrap;gap:10px}
+.brand{display:flex;align-items:center;gap:12px}
+.logo{width:40px;height:40px;background:#1a1a0a;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#d4a843;border:1px solid #d4a84340;letter-spacing:-0.5px}
+.brand-name{font-size:18px;font-weight:600;color:#fff}
+.brand-sub{font-size:11px;color:#64748b;margin-top:2px}
+.period-pill{background:#161e2e;border:1px solid #2d3a50;border-radius:20px;padding:5px 14px;font-size:12px;color:#94a3b8}
+.period-pill span{color:#d4a843;font-weight:500}
+.kpi-row{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-bottom:16px}
+.kpi{background:#111827;border:1px solid #1e2a3a;border-radius:10px;padding:14px 16px}
+.kpi-label{font-size:10px;color:#64748b;letter-spacing:.06em;text-transform:uppercase;margin-bottom:6px}
+.kpi-val{font-size:22px;font-weight:600;color:#fff;line-height:1}
+.kpi-val.gold{color:#d4a843}
+.kpi-val.blue{color:#58a6ff}
+.kpi-val.green{color:#2ecc71}
+.kpi-val.purple{color:#a78bfa}
+.kpi-sub{font-size:10px;color:#475569;margin-top:4px}
+.kpi-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:6px}
+.kpi-dot{width:6px;height:6px;border-radius:50%}
+.charts-row{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:16px}
+.chart-card{background:#111827;border:1px solid #1e2a3a;border-radius:10px;padding:16px}
+.chart-title{font-size:11px;color:#94a3b8;text-transform:uppercase;letter-spacing:.06em;margin-bottom:12px}
+.chart-wrap{position:relative;width:100%}
+.tbl-card{background:#111827;border:1px solid #1e2a3a;border-radius:10px;padding:16px}
+.tbl-title{font-size:11px;color:#94a3b8;text-transform:uppercase;letter-spacing:.06em;margin-bottom:14px;display:flex;align-items:center;justify-content:space-between}
+.tbl-wrap{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:12px;min-width:700px}
+thead th{text-align:left;padding:6px 12px;color:#475569;font-size:10px;font-weight:500;letter-spacing:.05em;text-transform:uppercase;border-bottom:1px solid #1e2a3a}
+tbody tr{border-bottom:1px solid #0f1929}
+tbody tr:hover{background:#0f1929}
+tbody td{padding:11px 12px;color:#cbd5e1;vertical-align:middle}
+.thumb{width:38px;height:38px;border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;flex-shrink:0}
+.creative-cell{display:flex;align-items:center;gap:10px}
+.creative-name{font-weight:500;color:#e2e8f0;font-size:12px}
+.badge{display:inline-block;padding:2px 8px;border-radius:4px;font-size:10px;font-weight:500}
+.badge-gold{background:#2b1d0a;color:#d4a843;border:1px solid #d4a84340}
+.badge-blue{background:#0d1e2e;color:#58a6ff;border:1px solid #58a6ff40}
+.num{text-align:right}
+.best{color:#2ecc71;font-weight:600}
+.warn{color:#f87171}
+</style>
+
+<div class="dash">
+  <div class="hdr">
+    <div class="brand">
+      <div class="logo">QR</div>
+      <div>
+        <div class="brand-name">QR Colchões</div>
+        <div class="brand-sub">Cama e Colchões · Meta Ads Performance</div>
+      </div>
+    </div>
+    <div class="period-pill">Período: <span>31/03/2025 — 17/04/2025</span></div>
+  </div>
+
+  <div class="kpi-row">
+    <div class="kpi">
+      <div class="kpi-top"><div class="kpi-label">Investimento total</div><div class="kpi-dot" style="background:#d4a843"></div></div>
+      <div class="kpi-val gold">R$ 278,02</div>
+      <div class="kpi-sub">2 conjuntos ativos</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-top"><div class="kpi-label">Alcance</div><div class="kpi-dot" style="background:#58a6ff"></div></div>
+      <div class="kpi-val blue">12.099</div>
+      <div class="kpi-sub">Impressões: 18.288</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-top"><div class="kpi-label">Novos contatos</div><div class="kpi-dot" style="background:#2ecc71"></div></div>
+      <div class="kpi-val green">42</div>
+      <div class="kpi-sub">Custo/contato: R$ 6,62</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-top"><div class="kpi-label">Cliques no link</div><div class="kpi-dot" style="background:#a78bfa"></div></div>
+      <div class="kpi-val purple">107</div>
+      <div class="kpi-sub">CTR médio: 0,59%</div>
+    </div>
+  </div>
+
+  <div class="kpi-row">
+    <div class="kpi">
+      <div class="kpi-top"><div class="kpi-label">CPC médio</div><div class="kpi-dot" style="background:#d4a843"></div></div>
+      <div class="kpi-val gold">R$ 2,60</div>
+      <div class="kpi-sub">Melhor: R$ 2,51</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-top"><div class="kpi-label">CPM médio</div><div class="kpi-dot" style="background:#58a6ff"></div></div>
+      <div class="kpi-val blue">R$ 15,20</div>
+      <div class="kpi-sub">Menor: R$ 15,04</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-top"><div class="kpi-label">Frequência</div><div class="kpi-dot" style="background:#2ecc71"></div></div>
+      <div class="kpi-val green">1,51</div>
+      <div class="kpi-sub">Igual nos 2 conjuntos</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-top"><div class="kpi-label">Novos seguidores</div><div class="kpi-dot" style="background:#d4a843"></div></div>
+      <div class="kpi-val gold">12</div>
+      <div class="kpi-sub">Amanda: 8 · Lana: 4</div>
+    </div>
+  </div>
+
+  <div class="charts-row">
+    <div class="chart-card">
+      <div class="chart-title">Investimento por conjunto (R$)</div>
+      <div class="chart-wrap" style="height:200px">
+        <canvas id="chartSpend" role="img" aria-label="Investimento por conjunto"></canvas>
+      </div>
+    </div>
+    <div class="chart-card">
+      <div class="chart-title">Novos contatos por conjunto</div>
+      <div class="chart-wrap" style="height:200px">
+        <canvas id="chartContatos" role="img" aria-label="Novos contatos por conjunto"></canvas>
+      </div>
+    </div>
+  </div>
+
+  <div class="tbl-card">
+    <div class="tbl-title">
+      <span>Conjuntos de anúncios · desempenho detalhado</span>
+      <span style="font-size:10px;color:#2ecc71">● = melhor resultado</span>
+    </div>
+    <div class="tbl-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th style="width:220px">Conjunto</th>
+            <th class="num">Investido</th>
+            <th class="num">Alcance</th>
+            <th class="num">Impressões</th>
+            <th class="num">Cliques</th>
+            <th class="num">CTR</th>
+            <th class="num">CPC</th>
+            <th class="num">CPM</th>
+            <th class="num">Novos cont.</th>
+            <th class="num">Custo/cont.</th>
+            <th class="num">Seguidores</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="creative-cell">
+                <div class="thumb" style="background:#1a1a0a;color:#d4a843;border:1px solid #d4a84340">AM</div>
+                <div>
+                  <div class="creative-name">Amanda · Jardim Carapina</div>
+                  <span class="badge badge-gold">Maior CTR</span>
+                </div>
+              </div>
+            </td>
+            <td class="num">R$ 137,93</td>
+            <td class="num">5.931</td>
+            <td class="num">8.972</td>
+            <td class="num best">55</td>
+            <td class="num best">0,61%</td>
+            <td class="num">R$ 2,51</td>
+            <td class="num">R$ 15,37</td>
+            <td class="num">20</td>
+            <td class="num">R$ 6,90</td>
+            <td class="num best">8</td>
+          </tr>
+          <tr>
+            <td>
+              <div class="creative-cell">
+                <div class="thumb" style="background:#0d1e2e;color:#58a6ff;border:1px solid #58a6ff40">LN</div>
+                <div>
+                  <div class="creative-name">Lana · Bairro Fátima</div>
+                  <span class="badge badge-blue">Menor custo/contato</span>
+                </div>
+              </div>
+            </td>
+            <td class="num">R$ 140,09</td>
+            <td class="num best">6.168</td>
+            <td class="num best">9.316</td>
+            <td class="num">52</td>
+            <td class="num">0,56%</td>
+            <td class="num warn">R$ 2,69</td>
+            <td class="num best">R$ 15,04</td>
+            <td class="num best">22</td>
+            <td class="num best">R$ 6,37</td>
+            <td class="num">4</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script>
+const labels = ["Amanda · Jardim Carapina", "Lana · Bairro Fátima"];
+const colors = ["#d4a843", "#58a6ff"];
+const gridColor = "#1e2a3a";
+const tickColor = "#475569";
+
+new Chart(document.getElementById("chartSpend"), {
+  type: "bar",
+  data: {
+    labels,
+    datasets: [{
+      label: "Investido",
+      data: [137.93, 140.09],
+      backgroundColor: colors.map(c => c + "99"),
+      borderColor: colors,
+      borderWidth: 1.5,
+      borderRadius: 4
+    }]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    plugins: { legend: { display: false }, tooltip: { callbacks: { label: ctx => "R$ " + ctx.parsed.y.toFixed(2).replace(".", ",") } } },
+    scales: {
+      x: { ticks: { color: tickColor, font: { size: 10 } }, grid: { color: gridColor } },
+      y: { ticks: { color: tickColor, font: { size: 10 }, callback: v => "R$" + v }, grid: { color: gridColor } }
+    }
+  }
+});
+
+new Chart(document.getElementById("chartContatos"), {
+  type: "bar",
+  data: {
+    labels,
+    datasets: [{
+      label: "Novos contatos",
+      data: [20, 22],
+      backgroundColor: ["#2ecc7199", "#2ecc71cc"],
+      borderColor: ["#2ecc71", "#27ae60"],
+      borderWidth: 1.5,
+      borderRadius: 4
+    }]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    plugins: { legend: { display: false }, tooltip: { callbacks: { label: ctx => ctx.parsed.y + " contatos" } } },
+    scales: {
+      x: { ticks: { color: tickColor, font: { size: 10 } }, grid: { color: gridColor } },
+      y: { ticks: { color: tickColor, font: { size: 10 } }, grid: { color: gridColor } }
+    }
+  }
+});
+</script>
